@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  financial-info:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-01T12:57:09.217307601-03:00"
+    description: A Helm chart for Kubernetes
+    digest: 71a34cac74b646a48c698a558a4cfeba491019089b2a18cc1bb115208b4a378a
+    name: financial-info
+    type: application
+    urls:
+    - https://vitorcvargas.github.io/helm-chart/financial-info-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-11-01T12:57:09.216785251-03:00"
