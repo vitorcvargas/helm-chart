@@ -4,3 +4,4 @@ app:
 database: 
   name: financial_info
   password: root
+  storage: mysql-storage
