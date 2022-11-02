@@ -1,0 +1,6 @@
+app:
+  name: fin-info-mysql
+
+database: 
+  name: financial_info
+  password: root

@@ -5,3 +5,8 @@ image:
   repository: vitorcvargas/financial-info-api
   image-tag: latest
   imagePullPolicy: Always
+
+db:
+  password: root
+  user: root
+  url: jdbc:mysql://fin-info-mysql-service:3306/financial_info?useSSL=false

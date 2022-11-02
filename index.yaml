@@ -1,14 +1,25 @@
 apiVersion: v1
 entries:
+  fin-info-mysql:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-02T10:03:17.208705731-03:00"
+    description: A Helm chart for Kubernetes
+    digest: 313ea9ea227700f8695b0a2c2b0eae1298c50db47a9535a15bc4ce2ad9dd8806
+    name: fin-info-mysql
+    type: application
+    urls:
+    - https://vitorcvargas.github.io/helm-chart/fin-info-mysql-0.1.0.tgz
+    version: 0.1.0
   financial-info:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-11-01T12:57:09.217307601-03:00"
+    created: "2022-11-02T10:03:17.208979645-03:00"
     description: A Helm chart for Kubernetes
-    digest: 71a34cac74b646a48c698a558a4cfeba491019089b2a18cc1bb115208b4a378a
+    digest: 531b20177456c31f75629d6dd49446444c2d6875898b356c2a725ba3fce0ee1c
     name: financial-info
     type: application
     urls:
     - https://vitorcvargas.github.io/helm-chart/financial-info-0.1.0.tgz
     version: 0.1.0
-generated: "2022-11-01T12:57:09.216785251-03:00"
+generated: "2022-11-02T10:03:17.208248059-03:00"

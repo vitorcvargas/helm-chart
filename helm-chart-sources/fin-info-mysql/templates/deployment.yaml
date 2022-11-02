@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment                    
+metadata:
+  name: fin-info-mysql-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:                    
+      app: {{ .Values.app.name }}
+  strategy:
+    type: Recreate
+  template:                         
+    metadata:
+      labels:                       
+        app: {{ .Values.app.name }}
+    spec:                          
+      containers:
+      - name: {{ .Values.app.name }}
+        image: mysql:5.6         
+        ports:
+        - containerPort: 3306
+        env:                        
+        - name: MYSQL_ROOT_PASSWORD 
+          value: {{ .Values.database.password }}
+        - name: MYSQL_DATABASE
+          value: {{ .Values.database.name }}
+        

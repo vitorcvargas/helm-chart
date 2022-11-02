@@ -1,12 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.app.name }}
-  namespace: default
-  labels:
-    app: {{ .Values.app.name }}
-    version: {{ $.Chart.AppVersion }}
-    env: {{ .Values.env }}
+  name: financial-info-deployment
 spec:
   replicas: 1
   selector:
@@ -16,11 +11,17 @@ spec:
     metadata:
       labels:
         app: {{ .Values.app.name }}
-        version: {{ $.Chart.AppVersion }}
     spec:
       containers:
-        - name: {{ .Values.app.name }}
-          image: vitorcvargas/financial-info-api:latest
-          imagePullPolicy: {{ .Values.image.imagePullPolicy }}
-          ports:
-          - containerPort: 80
+      - name: {{ .Values.app.name }}
+        image: vitorcvargas/financial-info-api:latest
+        imagePullPolicy: {{ .Values.image.imagePullPolicy }}
+        ports:
+        - containerPort: 8080
+        env:
+        - name: FINANCIAL_INFO_DB_URL
+          value: {{ .Values.db.url }}
+        - name: FINANCIAL_INFO_DB_USERNAME
+          value: {{ .Values.db.user }}
+        - name: FINANCIAL_INFO_DB_PASSWORD
+          value: {{ .Values.db.password }}
