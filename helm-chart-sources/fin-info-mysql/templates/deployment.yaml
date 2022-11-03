@@ -41,7 +41,10 @@ spec:
             mountPath: /var/lib/mysql
         env:                        
         - name: MYSQL_ROOT_PASSWORD 
-          value: {{ .Values.database.password }}
+          valueFrom:
+            secretKeyRef:
+              name: mysqlfininfopassword
+              key: MYSQL_FIN_INFO_PASSWORD
         - name: MYSQL_DATABASE
           value: {{ .Values.database.name }}
         

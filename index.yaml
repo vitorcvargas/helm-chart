@@ -3,9 +3,9 @@ entries:
   fin-info-mysql:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-11-02T11:47:57.43530284-03:00"
+    created: "2022-11-03T11:19:24.440716148-03:00"
     description: A Helm chart for Kubernetes
-    digest: 35ea9c9669aca28aabf8a887162e22e4e113ec3469017deb8d6caf6b9bdfd179
+    digest: bc58d96bfbaa922f2974c9d5263211e33f0eec9e05d9a37ea309c9bf089689f9
     name: fin-info-mysql
     type: application
     urls:
@@ -14,12 +14,12 @@ entries:
   financial-info:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-11-02T11:47:57.435526602-03:00"
+    created: "2022-11-03T11:19:24.441112101-03:00"
     description: A Helm chart for Kubernetes
-    digest: a10b2cfb3ce5578977fa47440abe9816e3c74309012d1e0e66f579df4afa21a4
+    digest: 9a2115744ad0bf8a37738adb5f4c87e4373da0030373ba97e544b8996b371fab
     name: financial-info
     type: application
     urls:
     - https://vitorcvargas.github.io/helm-chart/financial-info-0.1.0.tgz
     version: 0.1.0
-generated: "2022-11-02T11:47:57.434948995-03:00"
+generated: "2022-11-03T11:19:24.43987746-03:00"
